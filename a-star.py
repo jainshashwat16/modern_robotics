@@ -30,12 +30,13 @@ class Node:
 
     def update(self, parent, cost):
         global open_nodes
-        if self not in closed_nodes:
-            self.past_cost = cost
-            self.est_tot_cost = self.optimistic_ctg + self.past_cost
-            self.parent_node = parent
-            if self not in open_nodes:
-                bisect.insort(open_nodes, self)
+        if cost < self.past_cost:
+            if self not in closed_nodes:
+                self.past_cost = cost
+                self.est_tot_cost = self.optimistic_ctg + self.past_cost
+                self.parent_node = parent
+                if self not in open_nodes:
+                    bisect.insort(open_nodes, self)
 
     def explore(self, edges):
         for edge in edges:
