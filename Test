@@ -1,3 +1,0 @@
-from modern_robotics import MatrixExp3
-so3mat = [[ 0, -3,  2],[ 3,  0, -1],[-2,  1,  0]]
-print(MatrixExp3(so3mat))
