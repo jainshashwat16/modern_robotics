@@ -16,4 +16,5 @@ iterates.csv
 modern_robotics.py
 Test
 *.xml
-*.xml Quizzes/
+*.xml Quizzes/ venv/ results/ _pycache_/
+ .idea/
