@@ -82,7 +82,6 @@ def bound(v_1, v_2, v_3, v_4):
     """Checks if one or both of the two values are between the other two"""
     # put line endpoints in order
     endpoints = sorted([v_3, v_4])
-    print(f'{v_1}, {v_2}, {endpoints[0]}, {endpoints[1]}')
     if (endpoints[0] <= v_1 <= endpoints[1]) or (endpoints[0] <= v_2 <= endpoints[1]):
         return True
     else:
@@ -113,13 +112,16 @@ tree_max = 200
 # 1: initialize search tree T with x_start
 node_list = [Node(-.5, -.5)]
 # 2: while T is less than the maximum tree size:
+x_samp = None
 while len(node_list) < tree_max:
     # 3: x_samp <- sample from X
-    if len(node_list) % 10 == 0:
-        # every 10 nodes we sample the goal
+    if len(node_list) % 10 == 0 and (x_samp.x != .5 and x_samp.y != .5):
+        # every 10 nodes we sample the goal, checks that the previous sample wasn't also the goal to prevent infinite
+        # goal sampling loops when a collision occurs
         x_samp = Node(.5, .5)
     else:
         x_samp = Node(random.uniform(-.5, .5), random.uniform(-.5, .5))
+        print("new sample")
     # 4: x_nearest <- nearest node in T to x_samp
     x_nearest = nearest(x_samp, node_list)
     # 5: employ a local planner to find a motion from x_nearest to x_new in the direction of x_samp
