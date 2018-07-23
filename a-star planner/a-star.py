@@ -53,9 +53,9 @@ class Node:
         Runs the update function on the connected node"""
         for edge in edges:
             if edge.id1 == self.node_id:
-                nodes[edge.id2-1].update(self.node_id, edge.cost)
+                nodes[edge.id2-1].update(self.node_id, self.past_cost + edge.cost)
             elif edge.id2 == self.node_id:
-                nodes[edge.id1-1].update(self.node_id, edge.cost)
+                nodes[edge.id1-1].update(self.node_id, self.past_cost + edge.cost)
         # once all edges connected to the node have been explored we close it
         closed_nodes.append(self)
         open_nodes.remove(self)
@@ -92,7 +92,10 @@ with open('edges.csv') as csvfile:
 
 # explore each node in open nodes
 while open_nodes:
-    open_nodes[0].explore(edge_list)
+    if open_nodes[0].node_id == 12:
+        break
+    else:
+        open_nodes[0].explore(edge_list)
 
 # create the path backwards starting with the end node
 path = [nodes[-1]]
