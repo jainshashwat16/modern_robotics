@@ -3,8 +3,62 @@ import csv
 from anytree import NodeMixin
 
 
+"""
+This code takes a .csv file containing the location and diameter of round obstacles and uses the Rapidly Exploring
+Random Tree algorithm to produce a path from (-.5,-.5) to (.5,.5). The code uses the uniform distribution over 
+[-0.5, 0.5] x [-0.5, 0.5] for its random sampling. Every 10 samples the code selects the goal as the sample. 
+For local planning the code uses a straight line between nodes.
+
+Example input:
+A .csv file titled obstacles.csv located in the directory from which the code is executed containing the following
+columns are x, y, diameter:
+
+0.0, 0.0, 0.2
+0.0, 0.1, 0.2
+0.3, 0.2, 0.2
+-0.3, -0.2, 0.2
+-0.1, -0.4, 0.2
+-0.2, 0.3, 0.2
+0.3, -0.3, 0.2
+0.1, 0.4, 0.2
+
+Example output:
+3 .csv files located in the directory from which the code is executed
+
+nodes.csv containing:
+#ID,X,Y
+1,-0.5,-0.5
+2,0.48388486950392096,0.16353641408734887
+3,-0.45385608924722,0.2397028599163319
+4,0.45004976981087363,-0.10680190856020566
+5,-0.4746829351255277,-0.010926822324482721
+6,-0.39473907252811113,0.45540635796838624
+7,-0.1736030378307707,0.06432260083542196
+8,-0.42727549833580236,-0.43808443391652996
+9,0.3831067087526274,-0.11948453630635691
+10,0.003842617135883075,-0.2653641969478796
+11,0.5,0.5
+
+path.csv containing:
+1,2,11
+
+edges.csv containing:
+#ID1,ID2,COST
+2,1,1.1867223808703724
+3,1,0.7411407298671158
+4,2,0.2724474677128267
+5,3,0.25149352900098737
+6,3,0.2236578206494466
+7,5,0.3103410708251807
+8,1,0.09551120596946953
+9,4,0.06813385700513018
+10,7,0.37440665739160184
+11,2,0.33684928688674054
+"""
+
+
 class Node(NodeMixin):
-    """Data class that stores node coordinates and parents. Subclasses the any tree NodeMixin class to represent the
+    """Data class that stores node coordinates and parents. Subclasses the anytree NodeMixin class to represent the
     tree"""
     count = 0
 
@@ -17,10 +71,12 @@ class Node(NodeMixin):
         self.node_id = Node.count
 
     def __repr__(self):
+        """Returns a representation of the node, in this case its coordinates"""
         return f"({self.x},{self.y})"
 
 
 class Edge:
+    """Data class for representing edges"""
     def __init__(self, node_1, node_2):
         self.node_1 = node_1
         self.node_2 = node_2
@@ -28,7 +84,7 @@ class Edge:
 
 
 def nearest(samp, nodes):
-    """Returns the nearest node to the sample"""
+    """Returns the nearest node to the sample."""
     # initialize the lowest distance to the maximum distance between points in the space [-.5,.5]x [-.5,.5]y
     lowest = 2 ** .5
     for node in nodes:
@@ -40,6 +96,7 @@ def nearest(samp, nodes):
 
 
 def node_distance(node_1, node_2):
+    """Returns the straight line distance between two nodes."""
     return ((node_1.x - node_2.x) ** 2 + (node_1.y - node_2.y) ** 2) ** .5
 
 
@@ -121,7 +178,6 @@ while len(node_list) < tree_max:
         x_samp = Node(.5, .5)
     else:
         x_samp = Node(random.uniform(-.5, .5), random.uniform(-.5, .5))
-        print("new sample")
     # 4: x_nearest <- nearest node in T to x_samp
     x_nearest = nearest(x_samp, node_list)
     # 5: employ a local planner to find a motion from x_nearest to x_new in the direction of x_samp
@@ -130,7 +186,6 @@ while len(node_list) < tree_max:
     if collision_free(x_samp, x_nearest, obstacles):
         edges.append(motion)
         # 7: add x_new to T with an edge from x_nearest to x_new
-        print(f"({x_samp.x},{x_samp.y})")
         x_samp.parent = x_nearest
         node_list.append(x_samp)
         # 8: if x_new is in X_goal then:
@@ -141,22 +196,21 @@ while len(node_list) < tree_max:
             break
     else:
         Node.count -= 1
-        print("collision detected")
 
 # write CSV output
-with open('nodes.csv', 'w') as csvfile:
+with open('nodes.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(['#ID', 'X', 'Y'])
     for node in node_list:
         writer.writerow([node.node_id, node.x, node.y])
 
-with open('edges.csv', 'w') as csvfile:
+with open('edges.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerow(['#ID1', 'ID2', 'COST'])
     for edge in edges:
         writer.writerow([edge.node_1.node_id, edge.node_2.node_id, edge.cost])
 
-with open('path.csv', 'w') as csvfile:
+with open('path.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     path = []
     for node in x_samp.ancestors:
