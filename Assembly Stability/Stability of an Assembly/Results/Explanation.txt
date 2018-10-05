@@ -1,0 +1,5 @@
+The vector summation.png file shows graphically that the contact force vectors acting on each of the three bodies (1,3,2) sum to the 
+gravitational vector acting on the body. Therefore the solution calculated by the program is valid and the struture is able to stand.
+
+In the case where the assembly collapses no static solution can be found where the normal forces at the contacts are non-negative. 
+Therefore, friction is unable to hold the assembly together. 

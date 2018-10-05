@@ -1,0 +1,13 @@
+Input filename including the extension for the body data file:
+three body arch bodies.csv
+Input filename including the extension for the contact data file:
+standing three body arch contacts.csv
+Assembly stands
+k =[ 6.171  5.546  0.    19.009 11.142  0.     0.     0.     0.     0.
+  0.    11.142 12.441  6.171 12.113  0.     1.   ]
+
+Input filename including the extension for the body data file:
+three body arch bodies.csv
+Input filename including the extension for the contact data file:
+collapsing three body arch contacts.csv
+Assembly collapses

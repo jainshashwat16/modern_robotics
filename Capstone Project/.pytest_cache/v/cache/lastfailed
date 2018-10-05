@@ -1,0 +1,11 @@
+{
+  "test_feedback_control.py::test_feedback_control[k_p1-k_i1]": true,
+  "test_simulator.py::test_euler_step[configuration0-joint_speeds0-0.01-20-end_config0]": true,
+  "test_simulator.py::test_euler_step[configuration1-joint_speeds1-0.01-20-end_config1]": true,
+  "test_simulator.py::test_euler_step[configuration2-joint_speeds2-0.01-20-end_config2]": true,
+  "test_trajectory_generator.py::test_time_scale[0-1]": true,
+  "test_trajectory_generator.py::test_time_scale[0-2]": true,
+  "test_trajectory_generator.py::test_time_scale[1-1]": true,
+  "test_trajectory_generator.py::test_time_scale[2-1-1]": true,
+  "test_trajectory_generator.py::test_time_scale[2-1]": true
+}

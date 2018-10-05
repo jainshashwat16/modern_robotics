@@ -1,0 +1,13 @@
+Input filename including the extension for the body data file:
+standing assembly bodies.csv
+Input filename including the extension for the contact data file:
+standing assembly contacts.csv
+Assembly stands
+k =[ 3.351 15.538  0.     6.093  0.    27.42  62.456 22.85 ]
+
+
+Input filename including the extension for the body data file:
+collapsing assembly bodies.csv
+Input filename including the extension for the contact data file:
+collapsing assembly contacts.csv
+Assembly collapses

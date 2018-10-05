@@ -1,0 +1,9 @@
+Input filename including the extension for contact set:
+open.csv
+Form is open
+
+Input filename including the extension for contact set:
+closed.csv
+Form is closed
+[3.         1.         4.24264069 2.        ]
+
