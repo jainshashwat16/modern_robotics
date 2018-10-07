@@ -1,16 +1,25 @@
 [
-  "test_feedback_control.py::test_feedback_control[k_p0-k_i0-V_expected0-u_expected0]",
-  "test_feedback_control.py::test_feedback_control[k_p1-k_i1-V_expected1-u_expected1]",
+  "test_feedback_control.py::test_feedback_control_v[k_p0-k_i0-V_expected0-u_expected0]",
+  "test_feedback_control.py::test_feedback_control_v[k_p1-k_i1-V_expected1-u_expected1]",
   "test_simulator.py::test_next_state[configuration0-joint_speeds0-0.01-20-end_config0]",
   "test_simulator.py::test_next_state[configuration1-joint_speeds1-0.01-20-end_config1]",
   "test_simulator.py::test_next_state[configuration2-joint_speeds2-0.01-20-end_config2]",
+  "test_simulator.py::test_next_state[configuration3-joint_speeds3-0.01-20-end_config3]",
+  "test_simulator.py::test_next_state[configuration4-joint_speeds4-0.01-20-end_config4]",
   "test_simulator.py::test_euler_step[configuration0-joint_speeds0-0.1-20-end_config0]",
   "test_simulator.py::test_euler_step[configuration1-joint_speeds1-0.1-20-end_config1]",
   "test_simulator.py::test_euler_step[configuration2-joint_speeds2-0.1-20-end_config2]",
+  "test_simulator.py::test_calc_tsb",
+  "test_simulator.py::test_calc_tsb_2",
+  "test_simulator.py::test_calc_f_matrix",
+  "test_t_se.py::test_t_se[configuration0-M0-b_list0-t_b00-expected_t_se0]",
+  "test_t_se.py::test_t_se[configuration1-M1-b_list1-t_b01-expected_t_se1]",
+  "test_t_se.py::test_t_se[configuration2-M2-b_list2-t_b02-expected_t_se2]",
+  "test_t_se.py::test_t_se[configuration3-M3-b_list3-t_b03-expected_t_se3]",
   "test_trajectory_generator.py::test_time_scale[1-0-0]",
   "test_trajectory_generator.py::test_time_scale[1-1-1]",
   "test_trajectory_generator.py::test_time_scale[2-0-0]",
   "test_trajectory_generator.py::test_time_scale[2-2-1]",
   "test_trajectory_generator.py::test_thirteen_to_transform",
-  "test_trajectory_generator.py::test_configuration_to_transform"
+  "test_trajectory_generator.py::test_transform_to_13"
 ]

@@ -161,24 +161,5 @@ def thirteen_to_transform(x):
                  [x[3],     x[4],   x[5],   x[10]],
                   [x[6],    x[7],   x[8],   x[11]],
                   [0,       0,      0,      1]])
-
     return t
 
-
-def configuration_to_transform(configuration, t_b0, M, b_list):
-    """Takes a 13 vector specifying the end effector configuration and returns a transform matrix
-    Inputs:
-    Configuration (13 vector of floats): the current joint and chassis angles and gripper orientation as a vector
-    t_b0 (array in SE3): transform matrix from the center of the chassis to the base of the arm
-    M:
-    b_list (
-    """
-    # calculate base transform matrix
-    t_sb = calc_t_sb(configuration[0], configuration[1], configuration[2], .0963)
-    # calculate arm kinematics
-    print(configuration)
-    print(f"3:8 {configuration[3:8]}")
-    t_0e = FKinSpace(M, b_list, configuration[3:8])
-    t_be = np.dot(t_b0, t_0e)
-    t_se = np.dot(t_sb, t_be)
-    return t_se

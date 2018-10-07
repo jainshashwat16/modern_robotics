@@ -1,5 +1,5 @@
-from modern_robotics import MatrixLog6, TransInv, se3ToVec, Adjoint, FKinSpace, JacobianBody
-from simulator import calc_f_matrix
+from modern_robotics import MatrixLog6, TransInv, se3ToVec, Adjoint, FKinBody, JacobianBody
+from utils import calc_f_matrix, calc_t_sb
 import numpy as np
 
 
@@ -41,7 +41,7 @@ class Controller:
 
         self.x_err_integral = np.add(self.x_err_integral, x_err)
 
-        return v
+        return v, x_err
 
     def commanded_joint_vels(self, x_d, x_d_next, x, configuration, t_b0, M, b_list):
         """Calculates a commanded end effector twist in the end effector frame given the current configuration, reference
@@ -51,9 +51,9 @@ class Controller:
         Output
         """
         theta = configuration[3:11]
-        v = self.feedback_control(x_d, x_d_next, x)
+        v, x_err = self.feedback_control(x_d, x_d_next, x)
 
-        t_0e = FKinSpace(M, b_list, theta[3:])
+        t_0e = FKinBody(M, b_list, theta[3:])
 
         f = calc_f_matrix()
         f6 = np.zeros((6, 4))
@@ -61,17 +61,10 @@ class Controller:
 
         j_base = np.dot(Adjoint(np.dot(TransInv(t_0e), TransInv(t_b0))), f6)
 
-        # Blatant hack
-
-        j_base[4, 0] = j_base[4, 0] + .01910789
-        j_base[4, 1] = j_base[4, 1] - .01910789
-        j_base[4, 2] = j_base[4, 2] - .01910789
-        j_base[4, 3] = j_base[4, 3] + .01910789
-
         j_body = JacobianBody(b_list, theta[3:8])
 
         je = np.concatenate((j_base, j_body), axis=1)
-
-        u = np.dot(np.linalg.pinv(je), v)
-        return u
+        print(je)
+        u = np.dot(np.linalg.pinv(je, 1e-3), v)
+        return u, x_err
 

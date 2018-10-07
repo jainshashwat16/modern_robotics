@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c023ed68-dd82-4357-8393-0abd6b4b6b65" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly Stability/Assembly stability.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/__init__" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/feedback_control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/test_feedback_control.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/test_simulator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Capstone Project/trajectory_generator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capstone Project/test_t_se.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capstone Project/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/.pytest_cache/v/cache/lastfailed" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/.pytest_cache/v/cache/lastfailed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/.pytest_cache/v/cache/nodeids" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/Trajectory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/Trajectory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/__init__" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/test_FKinBody.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/feedback_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/feedback_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/reference_trajectory.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/reference_trajectory.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/test_feedback_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/test_feedback_control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/test_simulator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/test_simulator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Capstone Project/trajectory_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Capstone Project/trajectory_generator.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,89 +25,103 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+            <file leaf-file-name="feedback_control.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/Capstone Project/feedback_control.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="-17">
+                    <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+                    <folding>
+                      <element signature="e#0#91#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/Capstone Project/utils.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state>
+                    <caret column="46" selection-start-column="46" selection-end-column="46" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="simulator.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Capstone Project/simulator.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="17">
+                    <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66057444">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="60" column="64" lean-forward="true" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-                  <folding>
-                    <element signature="e#0#121#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="simulator.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/simulator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-442">
-                  <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_feedback_control.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/test_feedback_control.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="354">
-                  <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#0#70#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="feedback_control.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/feedback_control.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="66" column="47" lean-forward="true" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#0#92#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="trajectory_generator.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/trajectory_generator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2557">
-                  <caret line="183" column="15" selection-start-line="183" selection-start-column="15" selection-end-line="183" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_trajectory_generator.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Capstone Project/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#121#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_trajectory_generator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trajectory_generator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Capstone Project/trajectory_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_simulator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Capstone Project/test_simulator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_feedback_control.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Capstone Project/test_feedback_control.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -113,10 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>obsta</find>
-      <find>Node</find>
-      <find>body</find>
-      <find>body_no</find>
       <find>body_conta</find>
       <find>fx</find>
       <find>M</find>
@@ -128,7 +143,6 @@
       <find />
       <find>matmul</find>
       <find>screwTr</find>
-      <find>vec</find>
       <find>jac</find>
       <find>controll</find>
       <find>adjoin</find>
@@ -136,13 +150,18 @@
       <find>vectos</find>
       <find>.T</find>
       <find>kinem</find>
-      <find>calc</find>
       <find>CAL</find>
       <find>invers</find>
-      <find>jaco</find>
       <find>trans</find>
-      <find>fk</find>
       <find>transform</find>
+      <find>theta</find>
+      <find>jaco</find>
+      <find>fk</find>
+      <find>calc</find>
+      <find>v_b</find>
+      <find>join</find>
+      <find>se3</find>
+      <find>vec</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,21 +188,24 @@
         <option value="$PROJECT_DIR$/Assembly Stability/quiz13.whatever.py" />
         <option value="$PROJECT_DIR$/Capstone Project/Simulator.py" />
         <option value="$PROJECT_DIR$/Capstone Project/test_trajectory_generator" />
-        <option value="$PROJECT_DIR$/Capstone Project/test_simulator.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/test_FKinBody.py" />
         <option value="$PROJECT_DIR$/Capstone Project/test_feedback_control.py" />
-        <option value="$PROJECT_DIR$/Capstone Project/simulator.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/test_t_se.py" />
         <option value="$PROJECT_DIR$/Capstone Project/trajectory_generator.py" />
-        <option value="$PROJECT_DIR$/Capstone Project/main.py" />
-        <option value="$PROJECT_DIR$/Capstone Project/feedback_control.py" />
         <option value="$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/test_simulator.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/feedback_control.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/utils.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/main.py" />
+        <option value="$PROJECT_DIR$/Capstone Project/simulator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1432" />
-    <option name="y" value="-196" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="3352" />
+    <option name="y" value="-17" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -245,42 +267,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="Assembly stability" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="modern_robotics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assembly Stability" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assembly Stability/Assembly stability.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ch13 quiz 1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="modern_robotics" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Assembly Stability" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Assembly Stability/ch13 quiz 1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modern_robotics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -317,6 +303,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test_FKinBody" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modern_robotics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Capstone Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Capstone Project/test_FKinBody.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="test_feedback_control" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="modern_robotics" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,20 +339,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test_t_se" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="modern_robotics" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Capstone Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Capstone Project/test_t_se.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Assembly stability" />
-      <item itemvalue="Python.ch13 quiz 1" />
       <item itemvalue="Python.quiz13.whatever" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.test_feedback_control" />
+      <item itemvalue="Python.test_FKinBody" />
+      <item itemvalue="Python.test_t_se" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test_t_se" />
+        <item itemvalue="Python.test_FKinBody" />
         <item itemvalue="Python.test_feedback_control" />
         <item itemvalue="Python.quiz13.whatever" />
-        <item itemvalue="Python.ch13 quiz 1" />
-        <item itemvalue="Python.Assembly stability" />
       </list>
     </recent_temporary>
   </component>
@@ -366,47 +388,58 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1432" y="-196" width="1936" height="1056" extended-state="6" />
+    <frame x="3352" y="-17" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19283456" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.85767096" visible="true" weight="0.25811002" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Statistic" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22875817" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26693767" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.14232902" side_tool="true" visible="true" weight="0.25811002" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.47494555" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5076253" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19283456" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22875817" />
+      <window_info anchor="bottom" id="Statistic" order="7" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.47494555" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19283456" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2788671" />
       <window_info anchor="bottom" id="Statistic" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -422,49 +455,14 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Capstone Project/main.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="3" />
+          <line>50</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Probabilistic Roadmap/path_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" column="46" lean-forward="true" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a-star planner/a-star.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Probabilistic Roadmap/PRM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RRT planner/RRT_Planner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/a-star planner/a-star.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RRT planner/RRT_Planner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -618,47 +616,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Project/modern_robotics.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/numpy/core/arrayprint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="405" column="6" selection-start-line="405" selection-start-column="4" selection-end-line="405" selection-end-column="6" />
+        <state relative-caret-position="202">
+          <caret line="458" selection-start-line="458" selection-end-line="458" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Project/trajectory_generator.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/numpy/lib/index_tricks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2557">
-          <caret line="183" column="15" selection-start-line="183" selection-start-column="15" selection-end-line="183" selection-end-column="15" />
+        <state relative-caret-position="227">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Project/modern_robotics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="377" column="6" selection-start-line="377" selection-start-column="4" selection-end-line="377" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Project/test_FKinBody.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Project/test_simulator.py">
+    <entry file="file://$PROJECT_DIR$/Capstone Project/test_t_se.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+        <state relative-caret-position="248">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Project/simulator.py">
+    <entry file="file://$PROJECT_DIR$/Capstone Project/test_simulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Project/test_feedback_control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Project/trajectory_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Capstone Project/test_trajectory_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="510">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -667,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Capstone Project/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="60" column="64" lean-forward="true" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+        <state relative-caret-position="255">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="e#0#121#0" expanded="true" />
           </folding>
@@ -677,21 +703,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Capstone Project/feedback_control.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="66" column="47" lean-forward="true" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        <state relative-caret-position="-17">
+          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
-            <element signature="e#0#92#0" expanded="true" />
+            <element signature="e#0#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Project/test_feedback_control.py">
+    <entry file="file://$PROJECT_DIR$/Capstone Project/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Project/simulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
